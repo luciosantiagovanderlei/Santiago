@@ -1,8 +1,11 @@
 package com.santiago.santiago.entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Cliente {
+public class Cliente implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private Long codCliente;
 	private String nome;
 	private String endereco;
